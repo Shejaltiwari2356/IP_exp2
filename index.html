@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Kindle Profile Page</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="logo">Amazon Kindle</div>
+
+        <div class="search-bar">
+            <input type="text" placeholder="Search for books...">
+            <button>Search</button>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <div class="content">
+            <div class="section">
+                <h2>Product Overview</h2>
+                <p>Amazon Kindle is a series of e-readers designed and marketed by Amazon. Kindle devices enable users to browse, buy, download, and read e-books, newspapers, magazines, and other digital media via wireless networking to the Kindle Store.</p>
+            </div>
+            <div class="section">
+                <h2>Popular Books</h2>
+
+                <ul class="books-list">
+                    <li>
+                        <img src="https://m.media-amazon.com/images/I/51vv75oglyL.jpg" alt="The Great Gatsby">
+                        <span>The Great Gatsby by F. Scott Fitzgerald</span>
+                        <button onclick="readBook('The Great Gatsby')">Read</button>
+                    </li>
+                    <li>
+                        <img src="https://images-na.ssl-images-amazon.com/images/I/71Q1Iu4suSL.jpg" alt="Harry Potter - Deathly Hollow">
+                        <span>Harry Potter - Deathly Hollow</span>
+                        <button onclick="readBook('Harry Potter - Deathly Hollow')">Read</button>
+                    </li>
+                    <li>
+                        <img src="https://m.media-amazon.com/images/I/51b5YG6Y1rL.jpg" alt="To Kill a Mockingbird">
+                        <span>To Kill a Mockingbird by Harper Lee</span>
+                        <button onclick="readBook('To Kill a Mockingbird')">Read</button>
+                    </li>
+                    <li>
+                        <img src="https://images-na.ssl-images-amazon.com/images/I/71kxa1-0mfL.jpg" alt="1984">
+                        <span>1984 by George Orwell</span>
+                        <button onclick="readBook('1984')">Read</button>
+                    </li>
+                    <li>
+                        <img src="https://m.media-amazon.com/images/I/51Z0nLAfLmL.jpg" alt="The Catcher in the Rye">
+                        <span>The Catcher in the Rye by J.D. Salinger</span>
+                        <button onclick="readBook('The Catcher in the Rye')">Read</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>© 1996-2024, Amazon.com, Inc. or its affiliates.</p>
+    </div>
+
+    <script>
+        function readBook(bookTitle) {
+            alert('You chose to read: ' + bookTitle);
+            // Implement the logic to open the book or redirect to the reading page.
+        }
+    </script>
+
+</body>
+</html>
